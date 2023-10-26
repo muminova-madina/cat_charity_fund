@@ -29,7 +29,6 @@ async def create_new_donation(
     return await donation_process(new_donation, CharityProject, session)
 
 
-
 @router.get(
     '/',
     response_model=List[DonationDBFull],

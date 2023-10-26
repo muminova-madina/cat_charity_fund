@@ -41,7 +41,6 @@ async def create_new_charity_project(
     return await donation_process(new_project, Donation, session)
 
 
-
 @router.patch(
     '/{project_id}',
     response_model=CharityProjectDB,
@@ -66,7 +65,6 @@ async def partially_update_charity_project(
                                                charity_project.invested_amount, session)
     return await donation_process(await charityproject_crud.update_project(
         charity_project, obj_in, session), Donation, session)
-
 
 
 @router.get(
