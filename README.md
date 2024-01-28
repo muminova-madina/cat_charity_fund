@@ -69,4 +69,5 @@ uvicorn app.main:app
 
 ---
 
-Автор Muminova Madina
+## Автор 
+Муминова Мадина (https://github.com/muminova-madina)
